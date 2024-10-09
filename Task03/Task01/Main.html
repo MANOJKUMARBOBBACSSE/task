@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Library</h1>
+    </header>
+
+    <section id="book-form">
+        <h2>Add New Book</h2>
+        <form id="add-book-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <select id="category" required>
+                <option value="" disabled selected>Choose Category</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-fiction">Non-fiction</option>
+                <option value="Biography">Biography</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Science">Science</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <section id="library">
+        <h2>Your Books</h2>
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="Search books...">
+        </div>
+        <table id="book-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Borrowed Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <section id="borrow-history">
+        <h2>Borrowing History</h2>
+        <ul id="history-list">
+            
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
